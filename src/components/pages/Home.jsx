@@ -1,20 +1,9 @@
-import { useEffect, useState } from 'react';
-import { fetchTreadingsMovies } from 'Services/api';
+import { MovieList } from 'components/MovieList/MovieList';
 
 function Home() {
-  const [treading, setTreading] = useState([]);
-
-  useEffect(() => {
-    fetchTreadingsMovies().then(data => {
-      setTreading(data.results);
-      console.log(data.results);
-    });
-  }, []);
-
   return (
     <>
-      <h2>Treading today</h2>
-      {treading}
+      <MovieList />
     </>
   );
 }
