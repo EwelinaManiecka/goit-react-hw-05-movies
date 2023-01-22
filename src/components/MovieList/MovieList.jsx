@@ -15,7 +15,7 @@ export const MovieList = () => {
 
   return (
     <>
-      <h2>Treading today</h2>
+      <h2 className={style.h2}>Treading today</h2>
       <ul>
         {movies.map(movie => (
           <li className={style.li} key={movie.id}>

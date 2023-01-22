@@ -16,9 +16,17 @@ nav {
 .link {
   margin: 20px;
   padding: 8px 16px;
-  border-radius: 4px;
   font-weight: 500;
   font-size: larger;
   background-color: coral;
   color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(88, 88, 88);
+  width: 60px;
+  height: 30px;
+}
+
+.link:hover {
+  background-color: rgb(253, 99, 43);
+  color: rgb(255, 255, 255);
 }
