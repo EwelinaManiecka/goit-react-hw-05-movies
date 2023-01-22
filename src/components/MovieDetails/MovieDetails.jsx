@@ -40,7 +40,7 @@ const MovieDetails = () => {
             className={style.img}
             src={
               movie.poster_path
-                ? `https:www.themoviedb.org/t/p/w500/${poster_path}`
+                ? `https://www.themoviedb.org/t/p/w500/${poster_path}`
                 : `https://www.banffventureforum.com/wp-content/uploads/2019/08/no-photo-icon-22.png`
             }
             alt={oryginal_title}
