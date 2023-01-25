@@ -4,7 +4,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 import { fetchMoviesByQuery } from 'Services/api';
 
-function Movies() {
+const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query');
@@ -41,6 +41,6 @@ function Movies() {
       )}
     </>
   );
-}
+};
 
 export default Movies;
